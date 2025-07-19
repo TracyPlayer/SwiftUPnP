@@ -214,7 +214,7 @@ extension scdp {
     }
 
     func generateEvent(serviceName: String) -> String {
-        guard serviceStateTable.stateVariable.filter({ $0.sendEvents.lowercased() == "yes" }).count > 0 else { return "" }
+        guard serviceStateTable.stateVariable.count(where: { $0.sendEvents.lowercased() == "yes" }) > 0 else { return "" }
         var code = ""
 
         code += "// Event parser\n"
