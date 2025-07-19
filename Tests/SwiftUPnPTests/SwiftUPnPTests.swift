@@ -12,27 +12,27 @@ import Mocker
 import XCTest
 
 enum MockedData {
-    public static let openHomeRendererXML: URL = Bundle.module.url(forResource: "OpenHomeRendererDevice", withExtension: "xml")!
-    public static let mediaServerXML: URL = Bundle.module.url(forResource: "MediaServerDevice", withExtension: "xml")!
-    public static let config1XML: URL = Bundle.module.url(forResource: "OpenHomeConfig1Service", withExtension: "xml")!
-    public static let credentials1XML: URL = Bundle.module.url(forResource: "OpenHomeCredentials1Service", withExtension: "xml")!
-    public static let info1XML: URL = Bundle.module.url(forResource: "OpenHomeInfo1Service", withExtension: "xml")!
-    public static let playlist1XML: URL = Bundle.module.url(forResource: "OpenHomePlaylist1Service", withExtension: "xml")!
-    public static let oauth1XML: URL = Bundle.module.url(forResource: "OpenHomeOAuth1Service", withExtension: "xml")!
-    public static let playlistManager1XML: URL = Bundle.module.url(forResource: "OpenHomePlaylistManager1Service", withExtension: "xml")!
-    public static let product1XML: URL = Bundle.module.url(forResource: "OpenHomeProduct1Service", withExtension: "xml")!
-    public static let product2XML: URL = Bundle.module.url(forResource: "OpenHomeProduct2Service", withExtension: "xml")!
-    public static let radio1XML: URL = Bundle.module.url(forResource: "OpenHomeRadio1Service", withExtension: "xml")!
-    public static let receiver1XML: URL = Bundle.module.url(forResource: "OpenHomeReceiver1Service", withExtension: "xml")!
-    public static let sender1XML: URL = Bundle.module.url(forResource: "OpenHomeSender1Service", withExtension: "xml")!
-    public static let timeXML1: URL = Bundle.module.url(forResource: "OpenHomeTime1Service", withExtension: "xml")!
-    public static let transportXML1: URL = Bundle.module.url(forResource: "OpenHomeTransport1Service", withExtension: "xml")!
-    public static let volume1XML: URL = Bundle.module.url(forResource: "OpenHomeVolume1Service", withExtension: "xml")!
-    public static let volume2XML: URL = Bundle.module.url(forResource: "OpenHomeVolume2Service", withExtension: "xml")!
-    public static let avtransport1XML: URL = Bundle.module.url(forResource: "AVTransport1Service", withExtension: "xml")!
-    public static let connectionManager1XML: URL = Bundle.module.url(forResource: "ConnectionManager1Service", withExtension: "xml")!
-    public static let contentDirectory1XML: URL = Bundle.module.url(forResource: "ContentDirectory1Service", withExtension: "xml")!
-    public static let renderingControl1XML: URL = Bundle.module.url(forResource: "RenderingControl1Service", withExtension: "xml")!
+    static let openHomeRendererXML: URL = Bundle.module.url(forResource: "OpenHomeRendererDevice", withExtension: "xml")!
+    static let mediaServerXML: URL = Bundle.module.url(forResource: "MediaServerDevice", withExtension: "xml")!
+    static let config1XML: URL = Bundle.module.url(forResource: "OpenHomeConfig1Service", withExtension: "xml")!
+    static let credentials1XML: URL = Bundle.module.url(forResource: "OpenHomeCredentials1Service", withExtension: "xml")!
+    static let info1XML: URL = Bundle.module.url(forResource: "OpenHomeInfo1Service", withExtension: "xml")!
+    static let playlist1XML: URL = Bundle.module.url(forResource: "OpenHomePlaylist1Service", withExtension: "xml")!
+    static let oauth1XML: URL = Bundle.module.url(forResource: "OpenHomeOAuth1Service", withExtension: "xml")!
+    static let playlistManager1XML: URL = Bundle.module.url(forResource: "OpenHomePlaylistManager1Service", withExtension: "xml")!
+    static let product1XML: URL = Bundle.module.url(forResource: "OpenHomeProduct1Service", withExtension: "xml")!
+    static let product2XML: URL = Bundle.module.url(forResource: "OpenHomeProduct2Service", withExtension: "xml")!
+    static let radio1XML: URL = Bundle.module.url(forResource: "OpenHomeRadio1Service", withExtension: "xml")!
+    static let receiver1XML: URL = Bundle.module.url(forResource: "OpenHomeReceiver1Service", withExtension: "xml")!
+    static let sender1XML: URL = Bundle.module.url(forResource: "OpenHomeSender1Service", withExtension: "xml")!
+    static let timeXML1: URL = Bundle.module.url(forResource: "OpenHomeTime1Service", withExtension: "xml")!
+    static let transportXML1: URL = Bundle.module.url(forResource: "OpenHomeTransport1Service", withExtension: "xml")!
+    static let volume1XML: URL = Bundle.module.url(forResource: "OpenHomeVolume1Service", withExtension: "xml")!
+    static let volume2XML: URL = Bundle.module.url(forResource: "OpenHomeVolume2Service", withExtension: "xml")!
+    static let avtransport1XML: URL = Bundle.module.url(forResource: "AVTransport1Service", withExtension: "xml")!
+    static let connectionManager1XML: URL = Bundle.module.url(forResource: "ConnectionManager1Service", withExtension: "xml")!
+    static let contentDirectory1XML: URL = Bundle.module.url(forResource: "ContentDirectory1Service", withExtension: "xml")!
+    static let renderingControl1XML: URL = Bundle.module.url(forResource: "RenderingControl1Service", withExtension: "xml")!
 }
 
 extension Bundle {

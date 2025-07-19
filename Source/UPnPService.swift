@@ -172,7 +172,7 @@ public class UPnPService: Equatable, Identifiable, Hashable {
             Logger.swiftUPnP.info("Body(\(action)): \(httpBodyString)")
         }
 
-        let _ = try await URLSession.shared.data(for: request)
+        _ = try await URLSession.shared.data(for: request)
     }
 
     func postWithResult<T: Decodable>(action: String, envelope: Codable, log: MessageLog = .none) async throws -> T {

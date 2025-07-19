@@ -75,15 +75,15 @@ enum IPHelper {
         return rv
     }
 
-    public static func getInterfaceIPAddress(interfaceName: String) throws -> String {
+    static func getInterfaceIPAddress(interfaceName: String) throws -> String {
         try _interfaceAddressForName(interfaceName, .ipAddress)
     }
 
-    public static func getInterfaceNetMask(interfaceName: String) throws -> String {
+    static func getInterfaceNetMask(interfaceName: String) throws -> String {
         try _interfaceAddressForName(interfaceName, .netmask)
     }
 
-    public static func getInterfaceIPAddress(interfaceNames: [String]) -> String? {
+    static func getInterfaceIPAddress(interfaceNames: [String]) -> String? {
         for name in interfaceNames {
             if let ipAddress = try? getInterfaceIPAddress(interfaceName: name) {
                 return ipAddress
@@ -116,7 +116,7 @@ enum IPHelper {
         return isAvailable
     }
 
-    public static func freePortFromRange(range: Range<UInt16>) -> UInt16 {
+    static func freePortFromRange(range: Range<UInt16>) -> UInt16 {
         // Try at most 10 times to find a random port that is available within the specified range
         for _ in 0 ..< 10 {
             let port = UInt16.random(in: range)

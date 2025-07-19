@@ -69,15 +69,15 @@ class SSDPCocoaAsyncSocketDiscovery: SSDPDiscovery {
 }
 
 extension SSDPCocoaAsyncSocketDiscovery: GCDAsyncUdpSocketDelegate {
-    public func udpSocket(_: GCDAsyncUdpSocket, didNotSendDataWithTag _: Int, dueToError _: Error?) {
+    func udpSocket(_: GCDAsyncUdpSocket, didNotSendDataWithTag _: Int, dueToError _: Error?) {
         stopDiscovery()
     }
 
-    public func udpSocketDidClose(_: GCDAsyncUdpSocket, withError _: Error?) {
+    func udpSocketDidClose(_: GCDAsyncUdpSocket, withError _: Error?) {
         stopDiscovery()
     }
 
-    public func udpSocket(_: GCDAsyncUdpSocket, didReceive data: Data, fromAddress _: Data, withFilterContext _: Any?) {
+    func udpSocket(_: GCDAsyncUdpSocket, didReceive data: Data, fromAddress _: Data, withFilterContext _: Any?) {
         processData(data)
     }
 }
